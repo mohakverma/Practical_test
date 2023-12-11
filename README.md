@@ -20,10 +20,10 @@ The API will be available at http://localhost:8000.
 
 ## API Endpoints
 ### 1. Get All Passengers (/titanic/)
-Retrieves a JSON list of all passengers in the Titanic dataset.
+Displays a JSON list of all passengers in the Titanic dataset.
 Usage: http://localhost:8000/titanic/
 ### 2. Get Passenger by ID (/titanic/{passenger_id})
-Retrieves details of a specific passenger by their Passenger ID.
+Displays details of a specific passenger by their Passenger ID.
 Usage: http://localhost:8000/titanic/{passenger_id}
 Example: http://localhost:8000/titanic/1
 ### 3. View Passengers in HTML Table (/titanic/table/)
