@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passenger List</title>
+    <style>
+        /* Add some basic styling */
+        table { width: 100%; border-collapse: collapse; }
+        th, td { border: 1px solid black; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+    </style>
+</head>
+<body>
+    <h2>Passenger List</h2>
+    <table>
+        <tr>
+            <!-- Add table headers -->
+            <th>PassengerId</th>
+            <th>Survived</th>
+            <th>Pclass</th>
+            <th>Name</th>
+            <th>Sex</th>
+            <th>Age</th>
+            <th>SibSp</th>
+            <th>Parch</th>
+            <th>Ticket</th>
+            <th>Fare</th>
+            <th>Cabin</th>
+            <th>Embarked</th>
+        </tr>
+        {% for passenger in passengers %}
+        <tr>
+            <!-- Display each passenger's data -->
+            <td>{{ passenger.PassengerId }}</td>
+            <td>{{ passenger.Survived }}</td>
+            <td>{{ passenger.Pclass }}</td>
+            <td>{{ passenger.Name }}</td>
+            <td>{{ passenger.Sex }}</td>
+            <td>{{ passenger.Age }}</td>
+            <td>{{ passenger.SibSp }}</td>
+            <td>{{ passenger.Parch }}</td>
+            <td>{{ passenger.Ticket }}</td>
+            <td>{{ passenger.Fare }}</td>
+            <td>{{ passenger.Cabin }}</td>
+            <td>{{ passenger.Embarked }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
